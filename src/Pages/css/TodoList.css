@@ -1,0 +1,54 @@
+/* Main container */
+.todolist {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #9ec5ff, #c3cfe2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Input + button wrapper */
+.box {
+    width: 600px;
+    /* SAME WIDTH */
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Todo list container */
+.op {
+    width: 500px;
+    /* SAME WIDTH */
+    max-width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+/* Individual todo item */
+.li1 {
+    width: 100%;
+    /* FILL .op WIDTH */
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .box,
+    .op {
+        width: 100%;
+    }
+}
